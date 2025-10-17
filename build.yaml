@@ -1,0 +1,14 @@
+# Build configuration for Drift code generation
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Generate modular accessor classes
+          generate_connect_constructor: true
+          # Use data class name shortener (PeopleData instead of PeopleDriftData)
+          compact_query_methods: true
+
+
+
+
